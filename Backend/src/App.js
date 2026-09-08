@@ -9,10 +9,11 @@ import cookieParser from "cookie-parser";
 
 import { connectdb } from "./Config/db.Setup.js";
 
-
+const app = express()
 try {
 await connectdb()  
-const app = express()
+
+
 
 app.use(cookieParser(process.env.SESSION_SECRET)) 
 app.use(express.json()) 
@@ -49,4 +50,6 @@ app.use((err, req, res, next) => {
     console.log(error)
     
 } 
+
+export default app
 
