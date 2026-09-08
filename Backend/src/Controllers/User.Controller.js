@@ -7,7 +7,7 @@ import bcrypt from "bcrypt"
 import mongoose, { Types } from "mongoose"
 
 import { loginSchema, registerSchema } from "../Validators/zod.validator.js"
-import User from "../Models/User.model.js"
+import User from "../Models/User.Model.js"
 import z from "zod"
 import Project from "../Models/Project.Model.js"
 

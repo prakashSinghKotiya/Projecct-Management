@@ -1,4 +1,4 @@
-import User from "../Models/User.model.js"
+import User from "../Models/User.Model.js"
 
 
 export default async function checkAuth(req, res, next) {

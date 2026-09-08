@@ -1,6 +1,6 @@
 
 import Project from "../Models/Project.Model.js";
-import User from "../Models/User.model.js";
+import User from "../Models/User.Model.js";
 
 export const createProject = async (req, res, next) => {
    try {
